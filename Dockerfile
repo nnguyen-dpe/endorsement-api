@@ -10,8 +10,6 @@ RUN cd endorsement-api && \
     virtualenv venv --python=python3 && \
     source venv/bin/activate && \
     pip install -r requirements.txt && \
-    pip install psycopg2 && \
     chmod a+x run.sh
-
 EXPOSE 5000
 ENTRYPOINT ["/opt/app/endorsement-api/run.sh"]
