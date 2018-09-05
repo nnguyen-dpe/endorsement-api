@@ -20,6 +20,6 @@
   },
   "dependencies": {
     "npm": "^5.8.0",
-    "serverless": "^1.30.3"
+    "serverless": "^1.27.1"
   }
 }
