@@ -6,7 +6,7 @@ from apis.api import api
 from apis.routes import ns as endorsement_ns
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgresql_host/endorsementdb'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://root:root@postgresql_host/endorsementdb'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 api.add_namespace(endorsement_ns, '/api/v1')
