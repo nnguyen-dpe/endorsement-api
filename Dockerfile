@@ -11,5 +11,4 @@ RUN cd /opt/app && \
     pip install -r requirements.txt
 
 EXPOSE 5000/tcp
-WORKDIR /opt/app
-CMD sls wsgi serve
+CMD /opt/app/endorsement-api/run.sh
