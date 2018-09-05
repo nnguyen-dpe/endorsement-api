@@ -1,0 +1,8 @@
+@startuml Class
+class Endorsement {
+    developer: String (PK)
+    skill: String (PK)
+    count: Integer
+}
+
+@enduml
